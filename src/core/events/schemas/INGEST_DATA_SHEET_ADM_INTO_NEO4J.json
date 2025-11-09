@@ -1,0 +1,15 @@
+{
+  "type": "object",
+  "properties": {
+      "plant_id": {
+          "type": "string"
+      },
+      "data": {
+          "type": "string"
+      }
+  },
+  "required": [
+      "plant_id",
+      "data"
+  ]
+}

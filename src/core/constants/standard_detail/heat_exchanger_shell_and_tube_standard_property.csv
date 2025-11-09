@@ -1,0 +1,36 @@
+possible_table_name,parent_table_name,node_name,node_category,node_subpart_type,asset_class
+TEST REQUIREMENTS,,testing_inspections,primary_equipments,,heat_exchanger_shell_and_tube
+NOTES,,notes,primary_equipments,,heat_exchanger_shell_and_tube
+MATERIAL_OF_CONSTRUCTION,NOTES,materials,primary_equipments,,heat_exchanger_shell_and_tube
+MATERIALS OF CONSTRUCTION,,materials,primary_equipments,,heat_exchanger_shell_and_tube
+MATERIAL_OF_CONSTRUCTION,,materials,primary_equipments,,heat_exchanger_shell_and_tube
+MECHANICAL,,mechanical_geometry,primary_equipments,,heat_exchanger_shell_and_tube
+GEOMETRY,,mechanical_geometry,primary_equipments,,heat_exchanger_shell_and_tube
+POWER CABLES BETWEEN THYRISTOR CONTROLLER AND HEATER,TERMINATIONS,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT (CASE SPU 1-COLD FLARE RELEASE),,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT (100% BTRF CASE),,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+ELECTRICAL DATA,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT (CASE LAU - T-9280),,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+ANTI CONDENSATION HEATER,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+REFERENCE DOCUMENTS,,notes,primary_equipments,,heat_exchanger_shell_and_tube
+EARTHING CONNECTIONS,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+REFERENCE DOCUMENTS,NOTES,notes,primary_equipments,,heat_exchanger_shell_and_tube
+META DATA,,meta_data,primary_equipments,,heat_exchanger_shell_and_tube
+CONSTRUCTION OF ONE SHELL,,subparts,primary_equipments,"shell_side, tube_side",heat_exchanger_shell_and_tube
+MATERIAL_OF_CONSTRUCTION,MECHANICAL NOTES,materials,primary_equipments,,heat_exchanger_shell_and_tube
+DESCRIPTION,,equipments,primary_equipments,,heat_exchanger_shell_and_tube
+SAFETY LIMIT THERMOSTAT,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE_OF_ONE_UNIT,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+REFERENCE DOCUMENTS,MECHANICAL NOTES,notes,primary_equipments,,heat_exchanger_shell_and_tube
+DESIGN LODING,NOTES,equipments,primary_equipments,,heat_exchanger_shell_and_tube
+DESIGN LOADING,NOTES,equipments,primary_equipments,,heat_exchanger_shell_and_tube
+RESISTANCE TEMPERATURE DETECTOR (RTD),,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+CONTROL THERMOSTAT,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT (CONTAMINATED CONDENSATE CASE - NORMAL OPERATING CASE),,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+TERMINATIONS,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+THYRISTOR CONTROLLER,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+POWER CABLES FROM POWER DISTRIBUTION BOARD,TERMINATIONS,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+TRANSMITTER,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube
+PERFORMANCE OF ONE UNIT (CASE SPU - VM6102 E-3425 DEPRESS.),,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_shell_and_tube
+ELECTRIC HEATER DATASHEET,,instrumentation,primary_equipments,,heat_exchanger_shell_and_tube

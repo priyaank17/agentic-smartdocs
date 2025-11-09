@@ -1,0 +1,12 @@
+name: CI workflow
+
+on:
+  push:
+    branches:
+      - feature/*
+
+jobs:
+  CI:
+    uses: ./.github/workflows/common.ci.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}

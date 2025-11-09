@@ -1,0 +1,43 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "process_variable": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "controller": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "final_control_element": {
+                "type": "array",
+                "items": {
+                    "type": "string"
+                }
+            },
+            "description": {
+                "type": "string"
+            },
+            "narrative_id": {
+                "type": "string"
+            },
+            "control_loop_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "process_variable",
+            "controller",
+            "final_control_element",
+            "description",
+            "narrative_id",
+            "control_loop_id"
+        ]
+    }
+}

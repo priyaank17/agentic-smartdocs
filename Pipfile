@@ -1,0 +1,77 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[scripts]
+extract_asset_data = "python -m src.local_execution.process_narrative.asset_data_extraction.extract_asset_data"
+extract_asset_data_postprocessing = "python -m src.local_execution.postprocessing.postprocessing"
+accuracy_process_narrative = "python -m src.local_execution.accuracy.process_narrative.accuracy_csv"
+extract_control_narrative_data = "python -m src.local_execution.control_narrative.extract_control_narrative_data"
+accuracy_control_narrative = "python -m src.local_execution.control_narrative.business_accuracy_matrix.accuracy_csv"
+extract_asset_data_postprocessing_lambda = "python -m src.local_execution.process_narrative.postprocessing.postprocessing"
+extract_process_narrative_rag_data = "python -m src.local_execution.process_narrative_rag.extract_data"
+extract_process_narrative_rag_junior_data = "python -m src.local_execution.process_narrative_rag_junior.extract_data"
+extract_process_narrative_operating_condition_junior_data = "python -m src.local_execution.process_narrative_rag_junior.extract_equipment_operating_conditions"
+extract_control_narrative_rag_junior_data = "python -m src.local_execution.control_narrative_rag_junior.extract_data"
+accuracy_process_narrative_rag = "python -m src.local_execution.process_narrative_rag.accuracy.accuracy"
+extract_data_sheet_data = "python -m src.local_execution.data_sheets.extract_data_sheet_data"
+accuracy_data_sheet = "python -m src.local_execution.data_sheets.accuracy.accuracy"
+extract_hmb_data = "python -m src.local_execution.hmb_documents.extract_hmb_data"
+datasheet_adm = "python -m src.local_execution.data_sheets.generate_data_sheet_adm"
+ingest_hmb_data = "python -m src.pfd_ingestion.local_pfd_ingestion"
+update_standard_property_table ="python -m src.local_execution.data_sheets.update_standard_property_table.get_standard_name_csv"
+get_analogous_to_graph = "python -m src.local_execution.create_analogous_relationships"
+update_node_and_relationship_labels = "python -m src.local_execution.meta_graph.update_nodes_and_relationships"
+
+[packages]
+numpy = "*"
+coloredlogs = "*"
+watchtower = "*"
+exceptiongroup = "*"
+python-dotenv = "*"
+flake8 = "*"
+pypdfium2 = "*"
+boto3 = "*"
+pandas = "*"
+black = "*"
+natsort = "*"
+fuzzywuzzy = "*"
+pytest = "*"
+openai = "*"
+pdfplumber = "*"
+jsonschema = "*"
+langchain = "*"
+neo4j = "==4.4.11"
+requests-aws4auth = "*"
+langchain-community = "*"
+google-cloud-vision = "*"
+pymupdf = "*"
+pylint = "*"
+rich = "*"
+pycocotools="*"
+opencv-python-headless = "*"
+tomli = "*"
+dill = "*"
+PyPDF2 = "*"
+langchain_openai = "*"
+uvicorn = "*"
+fastapi = "*"
+types-requests = "*"
+artisan-ds-helpers = {git = "https://${TOKEN}@github.com/DrishyaAI/artisan-ds-helpers.git"}
+py-unified-cloud-adapter = {git = "https://${TOKEN}@github.com/DrishyaAI/py_unified_cloud_adapter.git"}
+azure-core = "==1.32.0"
+azure-ai-documentintelligence = "==1.0.0"
+azure-ai-formrecognizer = "==3.3.3"
+azure-common = "==1.1.28"
+agentic-doc = "*"
+
+[dev-packages]
+ipykernel = "*"
+notebook = "*"
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = true

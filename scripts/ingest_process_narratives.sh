@@ -1,0 +1,2 @@
+#!/bin/bash
+python -m src.local_execution.process_narrative.ingest_process_narratives

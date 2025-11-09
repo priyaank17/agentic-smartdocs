@@ -1,0 +1,7 @@
+{
+  // Line length. This cant be restricted for there
+  // could be long line of commands to be documents
+  "MD013": false,
+  /// no inline html. We need it when we want to include tables
+  "MD033": false
+}

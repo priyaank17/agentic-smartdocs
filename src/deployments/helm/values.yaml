@@ -1,0 +1,13 @@
+image:
+  repository: acr.example.com/smartdocs/api
+  tag: latest
+service:
+  type: ClusterIP
+  port: 80
+resources:
+  requests:
+    cpu: 500m
+    memory: 1Gi
+  limits:
+    cpu: 1
+    memory: 2Gi

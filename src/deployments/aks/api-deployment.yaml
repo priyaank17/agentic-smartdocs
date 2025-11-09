@@ -1,0 +1,53 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartdocs-api
+  namespace: smartdocs-agentic
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: smartdocs-api
+  template:
+    metadata:
+      labels:
+        app: smartdocs-api
+    spec:
+      containers:
+        - name: api
+          image: acr.example.com/smartdocs/api:latest
+          ports:
+            - containerPort: 8080
+          envFrom:
+            - secretRef:
+                name: smartdocs-secrets
+          readinessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 5
+          livenessProbe:
+            httpGet:
+              path: /health
+              port: 8080
+            initialDelaySeconds: 10
+          resources:
+            requests:
+              cpu: 500m
+              memory: 1Gi
+            limits:
+              cpu: 1
+              memory: 2Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smartdocs-api
+  namespace: smartdocs-agentic
+spec:
+  selector:
+    app: smartdocs-api
+  ports:
+    - port: 80
+      targetPort: 8080
+  type: ClusterIP

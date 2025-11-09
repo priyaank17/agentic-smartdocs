@@ -1,0 +1,22 @@
+# @format
+name: CD workflow
+
+on:
+  push:
+    branches:
+      - development
+
+jobs:
+  CI:
+    uses: ./.github/workflows/common.ci.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
+  CD:
+    needs: CI
+    uses: ./.github/workflows/aks.cd.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
+      ACR_USERNAME: ${{ secrets.ACR_USERNAME }}
+      ACR_PASSWORD: ${{ secrets.ACR_PASSWORD }}
+      AZURE_CREDENTIALS: ${{ secrets.AZURE_CREDENTIALS }}
+

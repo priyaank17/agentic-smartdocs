@@ -1,0 +1,495 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://drishya.ai/pnd.schema.json",
+  "title": "Process Narrative ADM Schema",
+  "description": "This is an ADM schema of a process narrative document.This schema provides metadata of the document, assets data and connections data represented in the document. A process narrative document is a concise written account that outlines the steps, procedures, and actions involved in carrying out a specific process or task. It typically provides a clear, sequential explanation of how a particular operation is performed, including key inputs, outputs, roles, responsibilities, and any relevant guidelines or protocols. Process narratives serve as valuable tools for documenting and communicating processes within organizations, aiding in training, quality assurance, and process improvement efforts.",
+  "type": "object",
+  "properties": {
+    "meta_data": {
+      "title": "Metadata",
+      "description": "Information about the document. typically it will be found in the title or introduction section of the document.",
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Id(UUID)",
+          "description": "Unique identifier for the document given by Artisan."
+        },
+        "adm_type": {
+          "type": "string",
+          "title": "ADM Type",
+          "description": "Type of ADM, this represents which document data is being extracted.",
+          "enum": [
+            "PROCESS_NARRATIVE"
+          ]
+        },
+        "plant_name": {
+          "type": "string",
+          "title": "Plant Name",
+          "description": "Name of the plant with which the document is associated."
+        },
+        "document_name": {
+          "type": "string",
+          "title": "Document Name",
+          "description": "Name of the document."
+        },
+        "document_number": {
+          "type": "string",
+          "title": "Document Number",
+          "description": "Unique number of the document."
+        }
+      },
+      "required": [
+        "id",
+        "adm_type",
+        "plant_name",
+        "document_name",
+        "document_number",
+        "client"
+      ]
+    },
+    "units": {
+      "title": "Units",
+      "description": "Units for various entities.",
+      "type": "object",
+      "properties": {
+        "flow_rate": {
+          "type": "string",
+          "title": "Flow Rate",
+          "description": "Unit of flow rate measurement.This unit must be one of the units commonly used across various industries, including oil and gas, chemical engineering, HVAC (heating, ventilation, and air conditioning), and others, for measuring the flow rates of gases.",
+          "anyOf": [
+            {
+              "const": "BPD",
+              "title": "Barrels per Day",
+              "description": "A unit of measurement used in the oil and gas industry to quantify the volume of crude oil or petroleum products produced or transported per day. Barrels per Day (BPD) is a measurement unit that represents the volume of liquid (usually crude oil or petroleum products) produced, processed, or transported within a single day. It's calculated by dividing the volume of liquid (in barrels) by the time (in days). A common example of BPD is in the context of oil production, where an oil well might produce 5,000 barrels of oil per day."
+            },
+            {
+              "const": "CUBIC_CENTIMETERS_PER_HOUR",
+              "title": "cm³/hr(Cubic Centimeters per Hour)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic centimeters per hour. Cubic Centimeters per Hour (cm³/hr) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one hour. It's calculated by dividing the volume of gas (in cubic centimeters) by the time (in hours). This unit is commonly used in laboratory settings or in very small-scale industrial processes where precise measurements are required over longer time periods."
+            },
+            {
+              "const": "CUBIC_CENTIMETERS_PER_MINUTE",
+              "title": "cm³/min(Cubic Centimeters per Minute)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic centimeters per minute. Cubic Centimeters per Minute (cm³/min) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one minute. It's calculated by dividing the volume of gas (in cubic centimeters) by the time (in minutes). This unit is commonly used in laboratory settings or in small-scale industrial processes where precise measurements are required over shorter time periods."
+            },
+            {
+              "const": "CUBIC_CENTIMETERS_PER_SECOND",
+              "title": "cm³/s(Cubic Centimeters per Second)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic centimeters per second. Cubic Centimeters per Second (cm³/s) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one second. It's calculated by dividing the volume of gas (in cubic centimeters) by the time (in seconds). This unit is commonly used in laboratory settings or in processes where extremely precise and fast measurements of gas flow rates are necessary."
+            },
+            {
+              "const": "CUBIC_FEET_PER_HOUR",
+              "title": "ft³/hr(Cubic Feet per Hour)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic feet per hour. Cubic Feet per Hour (ft³/hr) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one hour. It's calculated by dividing the volume of gas (in cubic feet) by the time (in hours). This unit is commonly used in industries such as HVAC (heating, ventilation, and air conditioning), where air or gas flow rates need to be measured over longer time periods."
+            },
+            {
+              "const": "CUBIC_FEET_PER_MINUTE",
+              "title": "ft³/min(Cubic Feet per Minute)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic feet per minute. Cubic Feet per Minute (ft³/min) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one minute. It's calculated by dividing the volume of gas (in cubic feet) by the time (in minutes). This unit is commonly used in industries such as HVAC (heating, ventilation, and air conditioning), where air or gas flow rates need to be measured over shorter time periods."
+            },
+            {
+              "const": "CUBIC_FEET_PER_SECOND",
+              "title": "ft³/s(Cubic Feet per Second)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic feet per second. Cubic Feet per Second (ft³/s) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one second. It's calculated by dividing the volume of gas (in cubic feet) by the time (in seconds). This unit is commonly used in industries such as HVAC (heating, ventilation, and air conditioning), where air or gas flow rates need to be measured over very short time periods or where high flow rates are encountered."
+            },
+            {
+              "const": "CUBIC_METERS_PER_HOUR",
+              "title": "m³/hr(Cubic Meters per Hour)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic meters per hour. Cubic Meters per Hour (m³/hr) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one hour. It's calculated by dividing the volume of gas (in cubic meters) by the time (in hours). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where large volumes of gas flow need to be measured over longer time periods."
+            },
+            {
+              "const": "CUBIC_METERS_PER_MINUTE",
+              "title": "m³/min(Cubic Meters per Minute)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic meters per minute. Cubic Meters per Minute (m³/min) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one minute. It's calculated by dividing the volume of gas (in cubic meters) by the time (in minutes). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where large volumes of gas flow need to be measured over shorter time periods."
+            },
+            {
+              "const": "CUBIC_METERS_PER_SECOND",
+              "title": "m³/s(Cubic Meters per Second)",
+              "description": "A unit of measurement used to express the rate of gas flow in cubic meters per second. Cubic Meters per Second (m³/s) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one second. It's calculated by dividing the volume of gas (in cubic meters) by the time (in seconds). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where large volumes of gas flow need to be measured over very short time periods or where high flow rates are encountered."
+            },
+            {
+              "const": "GPH",
+              "title": "Gallons per Hour",
+              "description": "A unit of measurement used to express the rate of liquid flow in gallons per hour. Gallons per Hour (GPH) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one hour. It's calculated by dividing the volume of liquid (in gallons) by the time (in hours). This unit is commonly used in industries such as water treatment, chemical processing, and agriculture, where liquid flow rates need to be measured over longer time periods."
+            },
+            {
+              "const": "GPM",
+              "title": "Gallons per Minute",
+              "description": "A unit of measurement used to express the rate of liquid flow in gallons per minute. Gallons per Minute (GPM) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one minute. It's calculated by dividing the volume of liquid (in gallons) by the time (in minutes). This unit is commonly used in industries such as water treatment, chemical processing, and agriculture, where liquid flow rates need to be measured over shorter time periods."
+            },
+            {
+              "const": "LITERS_PER_HOUR",
+              "title": "L/hr(Liters per Hour)",
+              "description": "A unit of measurement used to express the rate of liquid flow in liters per hour. Liters per Hour (L/hr) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one hour. It's calculated by dividing the volume of liquid (in liters) by the time (in hours). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over longer time periods are required."
+            },
+            {
+              "const": "LITERS_PER_MINUTE",
+              "title": "L/min(Liters per Minute)",
+              "description": "A unit of measurement used to express the rate of liquid flow in liters per minute. Liters per Minute (L/min) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one minute. It's calculated by dividing the volume of liquid (in liters) by the time (in minutes). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over shorter time periods are required."
+            },
+            {
+              "const": "LITERS_PER_SECOND",
+              "title": "L/s(Liters per Second)",
+              "description": "A unit of measurement used to express the rate of liquid flow in liters per second. Liters per Second (L/s) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one second. It's calculated by dividing the volume of liquid (in liters) by the time (in seconds). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over very short time periods or high flow rates are required."
+            },
+            {
+              "const": "MMSCFD",
+              "title": "Million Standard Cubic Feet per Day",
+              "description": "A unit of measurement used to express the rate of gas flow in million standard cubic feet per day. Million Standard Cubic Feet per Day (MMSCFD) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one day. It's calculated by dividing the volume of gas (in million standard cubic feet) by the time (in days). This unit is commonly used in the oil and gas industry for measuring large volumes of natural gas flow rates over longer time periods."
+            },
+            {
+              "const": "NORMAL_CUBIC_METERS_PER_HOUR",
+              "title": "Nm³/hr(Normal Cubic Meters per Hour)",
+              "description": "A unit of measurement used to express the rate of gas flow in normal cubic meters per hour. Normal Cubic Meters per Hour (Nm³/hr) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one hour. It's calculated by dividing the volume of gas (in normal cubic meters) by the time (in hours). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where gas flow rates are specified at standard conditions."
+            },
+            {
+              "const": "NORMAL_LITERS_PER_MINUTE",
+              "title": "NL/min(Normal Liters per Minute)",
+              "description": "A unit of measurement used to express the rate of gas flow in normal liters per minute. Normal Liters per Minute (NL/min) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one minute. It's calculated by dividing the volume of gas (in normal liters) by the time (in minutes). This unit is commonly used in industries such as laboratory research, where gas flow rates are specified at standard conditions."
+            },
+            {
+              "const": "OTHER",
+              "title": "Other",
+              "description": "A flow rate unit that does not match any of the specified options."
+            },
+            {
+              "const": "SCFD",
+              "title": "Standard Cubic Feet per Day",
+              "description": "A unit of measurement used to express the rate of gas flow in standard cubic feet per day. Standard Cubic Feet per Day (SCFD) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one day. It's calculated by dividing the volume of gas (in standard cubic feet) by the time (in days). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where gas flow rates need to be measured over longer time periods."
+            },
+            {
+              "const": "SCFH",
+              "title": "Standard Cubic Feet per Hour",
+              "description": "A unit of measurement used to express the rate of gas flow in standard cubic feet per hour. Standard Cubic Feet per Hour (SCFH) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one hour. It's calculated by dividing the volume of gas (in standard cubic feet) by the time (in hours). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where gas flow rates need to be measured over shorter time periods."
+            },
+            {
+              "const": "SCFM",
+              "title": "Standard Cubic Feet per Minute",
+              "description": "A unit of measurement used to express the rate of gas flow in standard cubic feet per minute. Standard Cubic Feet per Minute (SCFM) is a unit of measurement used to express the rate of gas flow. It measures the volume of gas that passes through a particular point in a system in one minute. It's calculated by dividing the volume of gas (in standard cubic feet) by the time (in minutes). This unit is commonly used in industries such as natural gas production, distribution, and consumption, where gas flow rates need to be measured over shorter time periods."
+            },
+            {
+              "const": "MILLIMETERS_PER_HOUR",
+              "title": "mL/hr(Milliliters per Hour)",
+              "description": "A unit of measurement used to express the rate of liquid flow in milliliters per hour. Milliliters per Hour (mL/hr) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one hour. It's calculated by dividing the volume of liquid (in milliliters) by the time (in hours). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over longer time periods are required."
+            },
+            {
+              "const": "MILLIMETERS_PER_MINUTE",
+              "title": "mL/min(Milliliters per Minute)",
+              "description": "A unit of measurement used to express the rate of liquid flow in milliliters per minute. Milliliters per Minute (mL/min) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one minute. It's calculated by dividing the volume of liquid (in milliliters) by the time (in minutes). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over shorter time periods are required."
+            },
+            {
+              "const": "MILLIMETERS_PER_SECOND",
+              "title": "mL/s(Milliliters per Second)",
+              "description": "A unit of measurement used to express the rate of liquid flow in milliliters per second. Milliliters per Second (mL/s) is a unit of measurement used to express the rate of liquid flow. It measures the volume of liquid that passes through a particular point in a system in one second. It's calculated by dividing the volume of liquid (in milliliters) by the time (in seconds). This unit is commonly used in industries such as pharmaceutical manufacturing, laboratory research, and small-scale chemical processing, where precise measurements of liquid flow rates over very short time periods or high flow rates are required."
+            }
+          ]
+        },
+        "temperature": {
+          "type": "string",
+          "title": "Temperature",
+          "description": "Unit of temperature measurement.",
+          "anyOf": [
+            {
+              "const": "CELSIUS",
+              "title": "Celsius",
+              "description": "Celsius is a widely used temperature scale known for its simplicity and practicality. In Celsius, 0 degrees represents the freezing point of water, while 100 degrees represents the boiling point of water at standard atmospheric pressure. It is commonly utilized in various fields including science, meteorology, cooking, and everyday temperature measurements."
+            },
+            {
+              "const": "FAHRENHEIT",
+              "title": "Fahrenheit",
+              "description": "Fahrenheit is a temperature scale known for its historical significance and widespread usage. In Fahrenheit, the freezing point of water is 32 degrees, and the boiling point is 212 degrees at standard atmospheric pressure. It is commonly employed in weather reports, culinary settings, and everyday temperature measurements."
+            },
+            {
+              "const": "KELVIN",
+              "title": "Kelvin",
+              "description": "Kelvin is an absolute temperature scale widely used in scientific and engineering disciplines. In Kelvin, 0 Kelvin represents absolute zero, the theoretical lowest possible temperature at which all thermal motion ceases. It is utilized in fields such as physics, chemistry, and engineering for precise temperature measurements."
+            },
+            {
+              "const": "RANKINE",
+              "title": "Rankine",
+              "description": "Rankine is a temperature scale similar to Fahrenheit but starting at absolute zero. In Rankine, 0 Rankine is absolute zero, and each degree Rankine is equivalent to one degree Fahrenheit. It finds applications in engineering contexts, particularly in fields requiring precise temperature measurements."
+            },
+            {
+              "const": "OTHER",
+              "title": "Other",
+              "description": "A temperature unit that does not match any of the specified options."
+            }
+          ]
+        },
+        "pressure": {
+          "type": "string",
+          "title": "Pressure",
+          "description": "Unit of pressure measurement.",
+          "anyOf": [
+            {
+              "const": "ATMOSPHERE",
+              "title": "Standard Atmosphere (atm)",
+              "description": "Standard Atmosphere (atm) is a unit of pressure approximately equal to the mean atmospheric pressure at sea level, which is defined as 101,325 pascals. It is often used in aviation and meteorology as a reference pressure."
+            },
+            {
+              "const": "BAR",
+              "title": "Bar",
+              "description": "Bar is a unit of pressure equal to 100,000 pascals. It is frequently used in meteorology, engineering, and industrial applications for measuring atmospheric pressure and fluid pressures."
+            },
+            {
+              "const": "INCH_MERCURY",
+              "title": "Inch of Mercury (inHg)",
+              "description": "Inch of Mercury (inHg) is a unit of pressure equal to the pressure exerted by a column of mercury one inch high at the standard acceleration of gravity. It is commonly used in aviation, weather forecasting, and barometric pressure measurements."
+            },
+            {
+              "const": "MMHG",
+              "title": "Millimeter of Mercury (mmHg)",
+              "description": "Millimeter of Mercury (mmHg) is a unit of pressure equal to the pressure exerted by a column of mercury one millimeter high at the standard acceleration of gravity. It is often used in medical settings to measure blood pressure."
+            },
+            {
+              "const": "OTHER",
+              "title": "Other",
+              "description": "A pressure unit that does not match any of the specified options."
+            },
+            {
+              "const": "PASCAL",
+              "title": "Pascal",
+              "description": "Pascal is the SI unit of pressure, defined as one newton per square meter. It is commonly used in scientific and engineering contexts for precise pressure measurements."
+            },
+            {
+              "const": "PSF",
+              "title": "Pound per Square Foot (psf)",
+              "description": "Pound per Square Foot (psf) is a unit of pressure defined as one pound of force applied per square foot. It is often used in architectural and civil engineering applications to calculate loads and stresses on surfaces."
+            },
+            {
+              "const": "PSI",
+              "title": "Pound per Square Inch (psi)",
+              "description": "Pound per Square Inch (psi) is a unit of pressure defined as one pound of force applied per square inch. It is commonly used in engineering, automotive, and aviation industries to measure pressure in pneumatic and hydraulic systems."
+            },
+            {
+              "const": "PSIG",
+              "title": "Pound per Square Inch Gauge (psig)",
+              "description": "Pound per Square Inch Gauge (psig) is a unit of pressure relative to atmospheric pressure, typically measured using a gauge. It is widely used in industrial applications for measuring pressure in compressed air systems and hydraulic machinery."
+            },
+            {
+              "const": "TORR",
+              "title": "Torr",
+              "description": "Torr is a unit of pressure based on the height of a mercury column in a barometer, where one torr is defined as 1/760th of a standard atmosphere. It is commonly used in vacuum technology and chemistry."
+            }
+          ]
+        }
+      },
+      "required": [
+        "flow_rate",
+        "temperature",
+        "pressure"
+      ]
+    },
+    "assets": {
+      "title": "Assets",
+      "description": "Information about various assets.We will get this from knowledge graph and map the assets with the information available in the process narrative document.",
+      "type": "array",
+      "items": {
+        "type": "object",
+        "properties": {
+          "asset_class": {
+            "type": "string",
+            "title": "Asset Class",
+            "description": "Class of the asset.we will get this from knowledge graph.",
+            "anyOf": [
+              {
+                "const": "ABSORPTION",
+                "title": "Absorption",
+                "description": "A process in which one substance captures or absorbs another substance."
+              },
+              {
+                "const": "COMPRESSOR",
+                "title": "Compressor",
+                "description": "A device used to increase the pressure of a gas."
+              },
+              {
+                "const": "DISTILLATION",
+                "title": "Distillation",
+                "description": "A process of separating components of a liquid mixture based on differences in volatility."
+              },
+              {
+                "const": "EXPANDER",
+                "title": "Expander",
+                "description": "A device used to decrease the pressure of a gas."
+              },
+              {
+                "const": "HEAT_EXCHANGER_MULTI_STREAM",
+                "title": "Heat Exchanger - Multi Stream",
+                "description": "A heat exchanger capable of handling multiple streams of fluid simultaneously."
+              },
+              {
+                "const": "HEAT_EXCHANGER_SHELL_&_TUBE",
+                "title": "Heat Exchanger - Shell & Tube",
+                "description": "A type of heat exchanger consisting of a shell (a large pressure vessel) with a bundle of tubes inside it."
+              },
+              {
+                "const": "PRESSURE_VESSEL",
+                "title": "Pressure Vessel",
+                "description": "A container designed to hold gases or liquids at a pressure substantially different from the ambient pressure."
+              },
+              {
+                "const": "PUMP",
+                "title": "Pump",
+                "description": "A device used to move fluids."
+              },
+              {
+                "const": "SEPARATOR",
+                "title": "Separator",
+                "description": "A device used to separate components of a mixture."
+              },
+              {
+                "const": "OTHER",
+                "title": "Other",
+                "description": "Any other type of asset."
+              }
+            ]
+          },
+          "asset_id": {
+            "type": "string",
+            "title": "Asset ID",
+            "description": "Unique identifier for the asset. We will assign it from asset_1 to asset_n , n will be the number of assets. This is an Id referenced in this document."
+          },
+          "asset_name": {
+            "type": "string",
+            "title": "Asset Name",
+            "description": "Name of the asset. We will get this from knowledge graph or P&ID."
+          },
+          "asset_tag": {
+            "type": "string",
+            "title": "Asset Tag",
+            "description": "Tag associated with the asset. We will get this from knowledge graph."
+          },
+          "asset_title": {
+            "type": "string",
+            "title": "Asset Title",
+            "description": "Title of the asset. it is a combinition of asset name and asset tag. It will be useful when we have only one asset tag for different assets."
+          }
+        },
+        "required": [
+          "asset_class",
+          "asset_id",
+          "asset_name",
+          "asset_tag",
+          "asset_title"
+        ]
+      }
+    }
+  },
+  "connections": {
+    "title": "Connections",
+    "description": "Information about connections between assets.",
+    "type": "array",
+    "items": {
+      "type": "object",
+      "properties": {
+        "id": {
+          "type": "string",
+          "title": "Connection ID",
+          "description": "Unique identifier for the connection. example: connection_1. This is referenced only within this document."
+        },
+        "asset_id": {
+          "type": "string",
+          "title": "Asset ID",
+          "description": "ID of the asset associated with the connection. This is referenced only within this document."
+        },
+        "connection_type": {
+          "type": "string",
+          "title": "Connection Type",
+          "description": "Type of connection.it can be IN_LET or OUT_LET.",
+          "anyOf": [
+            {
+              "const": "CLOSED",
+              "title": "Closed",
+              "description": "The valve is closed."
+            },
+            {
+              "const": "IN_LET",
+              "title": "Inlet",
+              "description": "The valve is in the inlet position."
+            },
+            {
+              "const": "OTHER",
+              "title": "Other",
+              "description": "The valve is in a state other than the specified ones."
+            },
+            {
+              "const": "OUT_LET",
+              "title": "Outlet",
+              "description": "The valve is in the outlet position."
+            }
+          ]
+        },
+        "commodity": {
+          "type": "string",
+          "title": "Commodity",
+          "description": "Commodity flowing through the connection."
+        },
+        "flow_rate": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Flow Rate",
+          "description": "Flow rate through the connection.Flow rate refers to the quantity of fluid (liquid or gas) passing through a defined cross-sectional area within a given period of time. In process industries, flow rate measurements are crucial for monitoring and controlling the movement of fluids through various stages of production. Accurate flow rate measurements ensure the proper functioning of equipment, optimize process efficiency, and maintain product quality. Flow rates are measured using a variety of devices such as flow meters, which can range from simple mechanical devices to sophisticated electronic instruments. Understanding and controlling flow rates are essential for maintaining safe and efficient operations in industries such as oil and gas, chemical processing, water treatment, and pharmaceuticals."
+        },
+        "temperature": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Temperature",
+          "description": "Temperature of the connection.Temperature is a measure of the average kinetic energy of the particles in a substance, indicating how hot or cold it is. In process industries, temperature plays a critical role in determining the physical and chemical properties of materials and the efficiency of various processes. Accurate temperature control is essential for maintaining product quality, ensuring safety, and optimizing process performance. Temperature measurements are performed using temperature sensors and instruments such as thermocouples, resistance temperature detectors (RTDs), and infrared thermometers. Temperature monitoring and control are vital in industries such as food and beverage, petrochemicals, HVAC (heating, ventilation, and air conditioning), and semiconductor manufacturing."
+        },
+        "pressure": {
+          "anyOf": [
+            {
+              "type": "number"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "title": "Pressure",
+          "description": "Pressure of the connection.Pressure is the force applied perpendicular to the surface of an object per unit area. In process industries, pressure is a key parameter that influences the behavior of gases and liquids within systems and equipment. Pressure measurements are critical for monitoring and controlling processes, ensuring the integrity of pipelines and vessels, and ensuring the safety of personnel and equipment. Various types of pressure sensors and instruments, such as pressure gauges, transmitters, and switches, are used to measure and monitor pressure in industrial applications. Understanding and managing pressure levels are essential for industries such as oil and gas, chemical processing, power generation, and aerospace."
+        },
+        "source_asset_name": {
+          "type": "string",
+          "title": "Source Asset Name",
+          "description": "Name of the asset acting as the source in the connection."
+        },
+        "destination_asset_name": {
+          "type": "string",
+          "title": "Destination Asset Name",
+          "description": "Name of the asset acting as the destination in the connection."
+        },
+        "narrative_id": {
+          "type": "integer",
+          "title": "Narrative ID",
+          "description": "ID of the narrative associated with the connection. This is referenced only within this document."
+        }
+      },
+      "required": [
+        "connection_type",
+        "commodity",
+        "source_asset_name",
+        "destination_asset_name",
+        "narrative_id"
+      ]
+    }
+  },
+  "required": [
+    "meta_data",
+    "units",
+    "assets",
+    "connections"
+  ]
+}

@@ -1,0 +1,29 @@
+[flake8]
+# Some sane defaults for the code style checker flake8
+exclude =
+    .tox
+    build
+    dist
+    .eggs
+    docs/conf.py
+    env
+    .venv
+    antenv
+    node_modules
+max-line-length = 88
+max-complexity = 10
+ignore =
+    # Whitespace before ':'
+    E203
+    # Whitepsace at end of line
+    W291
+    # Line break before logical
+    W503
+    # No inline html in docs
+    MD033
+    # line too long
+    E501
+docstring-convention = numpy
+per-file-ignores =
+    tests/*: D101, D103
+inline-quotes = "

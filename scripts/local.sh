@@ -1,0 +1,12 @@
+#!/bin/bash
+./scripts/setup.sh
+./scripts/create_folders.sh
+./scripts/download_documents_list.sh
+./scripts/download_data_sheets.sh
+./scripts/download_hmbs.sh
+./scripts/download_process_narratives.sh
+./scripts/download_pfds.sh
+./scripts/ingest_data_sheets.sh
+./scripts/ingest_hmbs.sh
+./scripts/ingest_pfds.sh
+./scripts/ingest_process_narratives.sh

@@ -1,0 +1,65 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://drishya.ai/liquid.schema.json",
+  "title": "Liquid Schema",
+  "description": "",
+  "type": "array",
+  "items": {
+    "type": "object",
+    "additionalProperties": false,
+    "properties": {
+      "property_name": {
+        "title": "Property Name",
+        "type": "string",
+        "description": "Name of the property"
+      },
+      "property_value": {
+        "title": "Property Value",
+        "type": "string",
+        "description": "Value of the property"
+      },
+      "properties_notes": {
+        "title": "Property Notes",
+        "type": "string",
+        "description": "An extra information that is related to the property which in mentioned in general"
+      },
+      "data_sheet_section": {
+        "title": "Data Sheet Section",
+        "type": "string",
+        "description": "Specifies the source or origin of the property extracted from the datasheet's specific section. For example 'PERFORMANCE_OF_ONE_UNIT', 'PROCESS_DATA', etc"
+      },
+      "context": {
+        "type": "object",
+        "title": "Context",
+        "description": " ",
+        "properties": {
+          "context_name": {
+            "type": "string",
+            "description": "Every property that captured in data sheet would be fall in certain context. It may be NOZZLE, EQUIPMENT, SUB_PART.",
+            "anyOf": [
+              {
+                "const": "EQUIPMENT",
+                "description": "If the property is associated with the equipment, then the particular property context should be equipment"
+              },
+              {
+                "const": "NOZZLE",
+                "description": "If the property is associated with the nozzle, then the particular property context should be nozzle"
+              },
+              {
+                "const": "SUB_PART",
+                "description": "If the property is associated with the sub_part, then the particular property context should be sub_part."
+              }
+            ]
+          }
+        }
+      }
+    },
+    "required": [
+      "property_name",
+      "property_value",
+      "property_notes",
+      "data_sheet_section",
+      "context"
+    ]
+  }
+}

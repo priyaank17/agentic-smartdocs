@@ -1,0 +1,50 @@
+possible_table_name,parent_table_name,node_name,node_category,node_subpart_type,asset_class
+TOTAL STREAM PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 337 FROM E-3303 TO D-3104 H&M BALANCE,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+MATERIAL_OF_CONSTRUCTION,NOTES,materials,primary_equipments,,heat_exchanger_air_cooled
+LIQUID PROPERTIES,OPERATING CASES STREAM DESCRIPTION 334 FROM MIXER TO E-3303,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. PERCENTS,OPEARATING CASES STREAM DESCRIPTION 312 FRM D-3305 TO E-3307,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. PERCENTS,OPEARATING CASES STREAM DESCRIPTION 337 FROM E-3303 TO D-3104,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+PERFORMANCE DATA - AIR SIDE,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_air_cooled
+VAPOUR PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 337 FROM E-3303 TO D-3104,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+CONTROLS - AIR SIDE,,subparts,primary_equipments,air_side,heat_exchanger_air_cooled
+"DESIGN,MATERIAL, AND CONSTRUCTION",,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+CONTROLS- AIR SIDE,,subparts,primary_equipments,air_side,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. PERCENTS,OPERATING CASES STREAM DESCRIPTION 313 FROM E-3307 TO T-3400,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+BASIC DESIGN DATA,,testing_inspections,primary_equipments,,heat_exchanger_air_cooled
+MECHANICAL EQUIPMEMT,,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+VAPOR PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 312 FRM D-3305 TO E-3307,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TUBE,"DESIGN, MATERIAL AND CONSTRUCTION",materials,primary_equipments,,heat_exchanger_air_cooled
+FIN,"DESIGN, MATERIAL AND CONSTRUCTION",construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+"DESIGN, MATERIAL AND CONSTRUCTION",,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+"DESIGN, MATERIAL, AND CONSTRUCTION (CONTINUED)",,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+STREAM DESCRIPTION 334 FROM MIXER TO E-3303,OPERATING CASES,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. PERCENTS,OPERATING CASES STREAM DESCRIPTION 334 FROM MIXER TO E-3303,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+SHIPPING,,meta_data,primary_equipments,,heat_exchanger_air_cooled
+MECHANICAL EQUIPMENT,,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+DESCRIPTION,,equipments,primary_equipments,,heat_exchanger_air_cooled
+PERFORMANCE DATA - TUBE SIDE,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_air_cooled
+TOTAL STREAM PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 312 FRM D-3305 TO E-3307 H&M BALANCE CASE,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+VAPOR PROPERTIES,OPERATING CASES STREAM DESCRIPTION 334 FROM MIXER TO E-3303,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+REFERENCE DOCUMENTS,NOTES,notes,primary_equipments,,heat_exchanger_air_cooled
+PERFORMANCE DATA-TUBE SIDE,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_air_cooled
+STREAM DESCRIPTION 312 FROM D-3305 TO E-3307,OPEARATING CASES,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+"DESIGN, MATERIAL, AND CONSTRUCTION",,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. RATES IB HR,OPERATING CASES STREAM DESCRIPTION 334 FROM MIXER TO E-3303,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+STREAM DESCRIPTION 337 FROM E-3303 T0 D-3104,OPEARATING CASES,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+STREAM DESCRIPTION 313 FROM E-3307 TO T-3400,OPERATING CASES,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TUBE,"Design, Material, and Construction",materials,primary_equipments,,heat_exchanger_air_cooled
+HEADER,"Design, Material, and Construction",construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+HEADER,"DESIGN, MATERIAL AND CONSTRUCTION",construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP RATES LB HR,OPERATING CASES STREAM DESCRIPTION 313 FROM E-3307 TO T-3400,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+LIQUID PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 337 FROM E-3303 TO D-3104,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+META DATA,,meta_data,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP RATES LB HR,OPEARATING CASES STREAM DESCRIPTION 312 FRM D-3305 TO E-3307,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+LIQUID PROPERTIES,OPEARATING CASES STREAM DESCRIPTION 312 FRM D-3305 TO E-3307,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+DESIGN MATERIAL AND CONSTRUCTION,,construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+VAPOR PROPERTIES,OPERATING CASES STREAM DESCRIPTION 313 FROM E-3307 TO T-3400,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL WEIGHT COMP. RATES IB HR,OPEARATING CASES STREAM DESCRIPTION 337 FROM E-3303 TO D-3104,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+LIQUID PROPERTIES,OPERATING CASES STREAM DESCRIPTION 313 FROM E-3307 TO T-3400,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL STREAM PROPERTIES,OPERATING CASES STREAM DESCRIPTION 313 FROM E-3307 TO T-3400 H&M BALANCE CASE,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+TOTAL STREAM PROPERTIES,OPERATING CASES STREAM DESCRIPTION 334 FROM MIXER TO E-3303,process_fluids,primary_equipments,,heat_exchanger_air_cooled
+FIN,"Design, Material, and Construction",construction_accessories,primary_equipments,,heat_exchanger_air_cooled
+PERFORMANCE DATA- AIR SIDE,,nozzles,primary_equipments,"inlet, outlet",heat_exchanger_air_cooled

@@ -1,0 +1,98 @@
+{
+  "type": "object",
+  "properties": {
+    "meta_data": {
+      "type": "object",
+      "properties": {
+        "adm_type": {
+          "type": "string",
+          "title": "ADM Type",
+          "description": "Type of ADM, this represents which document data is being extracted.",
+          "enum": [
+            "HMB"
+          ]
+        },
+        "document_name": {
+          "type": "string",
+          "title": "Document Name",
+          "description": "Name of the document."
+        },
+        "id": {
+          "type": "string",
+          "title": "Id(UUID)",
+          "description": "Unique identifier for the document given by Artisan."
+        },
+        "plant_name": {
+          "type": "string",
+          "title": "Plant Name",
+          "description": "Name of the plant with which the document is associated."
+        }
+      },
+      "required": [
+        "adm_type",
+        "document_name",
+        "plant_name",
+        "id"
+      ]
+    },
+    "streams": {
+      "type": "array",
+      "description": "An array of stream objects representing different streams of a process.",
+      "items": {
+        "type": "object",
+        "properties": {
+          "stream_number": {
+            "type": "string",
+            "description": "The identifier for a specific stream of a process."
+          },
+          "operating_conditions": {
+            "type": "array",
+            "description": "It defines operating conditions for the stream.",
+            "items": {
+              "type": "object",
+              "properties": {
+                "state": {
+                  "type": "string",
+                  "description": "It defines the state of the stream."
+                },
+                "properties": {
+                  "type": "array",
+                  "description": "It describes various properties of the stream",
+                  "items": {
+                    "type": "object",
+                    "properties": {
+                      "name": {
+                        "type": "string",
+                        "description": "The name of the property being measured or specified."
+                      },
+                      "value": {
+                        "type": ["string", "number"],
+                        "description": "The value of the property, which can be a string or number."
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "value"
+                    ]
+                  }
+                }
+              },
+              "required": [
+                "state",
+                "properties"
+              ]
+            }
+          }
+        },
+        "required": [
+          "stream_number",
+          "operating_conditions"
+        ]
+      }
+    }
+  },
+  "required": [
+    "meta_data",
+    "streams"
+  ]
+}

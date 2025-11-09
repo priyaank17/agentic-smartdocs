@@ -1,0 +1,9 @@
+# @ Lint JSON and JSON schema files
+npm run lint
+# @ Linting Markdown files
+npm run lint:markdown
+# @ Linting Python files
+pylint src/**/*.py tests/**/*.py
+flake8
+# @ Testing
+pytest

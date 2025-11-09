@@ -1,0 +1,12 @@
+CALL scripts\setup.bat
+CALL scripts\create_folders.bat
+CALL scripts\download_documents_list.bat
+CALL scripts\download_data_sheets.bat
+CALL scripts\download_hmbs.bat
+CALL scripts\download_process_narratives.bat
+CALL scripts\download_pfds.bat
+CALL scripts\ingest_data_sheets.bat
+CALL scripts\ingest_hmbs.bat
+CALL scripts\ingest_pfds.bat
+CALL scripts\ingest_process_narratives.bat
+CALL scripts\ingest_control_narratives.bat

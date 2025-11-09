@@ -1,0 +1,109 @@
+name: "AKS Continuous Deployment"
+
+on:
+  workflow_call:
+    secrets:
+      TOKEN:
+        description: 'Token for the CI workflow from CD'
+        required: true
+      ACR_USERNAME:
+        description: 'Azure Container Registry Username'
+        required: true
+      ACR_PASSWORD:
+        description: 'Azure Container Registry Password'
+        required: true
+      AZURE_CREDENTIALS:
+        description: 'Azure Service Principal credentials'
+        required: true
+  push:
+    branches:
+      - development
+  workflow_run:
+    workflows: ["Common workflow"]
+    types:
+      - completed
+
+env:
+  ACR_REGISTRY: drishyaaksacr.azurecr.io
+  AKS_CLUSTER: drishya-aks-cluster
+  AKS_RESOURCE_GROUP: drishya-resources-dev
+  NAMESPACE: drishya-webapp-backend
+  IMAGE_NAME: smartdocuments
+  DOCKERFILE: DockerFile.smartdocuments
+  DEPLOYMENT: smartdocuments
+
+jobs:
+  build-and-deploy:
+    if: >
+      github.event.workflow_run.conclusion == 'success' &&
+      github.event.workflow_run.head_branch == 'development'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Login to Azure Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ${{ env.ACR_REGISTRY }}
+          username: ${{ secrets.ACR_USERNAME }}
+          password: ${{ secrets.ACR_PASSWORD }}
+
+      - name: Build Docker image
+        run: |
+          docker buildx build \
+            --load \
+            --file ${{ env.DOCKERFILE }} \
+            --tag ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} \
+            .
+
+      - name: Scan Docker image with Trivy
+        uses: aquasecurity/trivy-action@master
+        with:
+          image-ref: ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+          format: 'table'
+          severity: 'CRITICAL,HIGH'
+          ignore-unfixed: true
+
+      - name: Push Docker image
+        run: |
+          docker push ${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }}
+
+      - name: Azure login
+        uses: azure/login@v2
+        with:
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+
+      - name: Set up Kubernetes context
+        uses: azure/aks-set-context@v3
+        with:
+          resource-group: ${{ env.AKS_RESOURCE_GROUP }}
+          cluster-name: ${{ env.AKS_CLUSTER }}
+          admin: false
+
+      - name: Create namespace if not exists
+        run: |
+          kubectl create namespace ${{ env.NAMESPACE }} --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Create ACR pull secret
+        run: |
+          kubectl create secret docker-registry acr-secret \
+            --namespace ${{ env.NAMESPACE }} \
+            --docker-server=${{ env.ACR_REGISTRY }} \
+            --docker-username=${{ secrets.ACR_USERNAME }} \
+            --docker-password=${{ secrets.ACR_PASSWORD }} \
+            --dry-run=client -o yaml | kubectl apply -f -
+
+      - name: Deploy application
+        run: |
+          kubectl set image deployment/${{ env.DEPLOYMENT }} ${{ env.DEPLOYMENT }}=${{ env.ACR_REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.sha }} -n ${{ env.NAMESPACE }} || \
+          kubectl apply -f k8s/deployment.yaml -n ${{ env.NAMESPACE }}
+          kubectl apply -f k8s/service.yaml -n ${{ env.NAMESPACE }}
+          kubectl rollout restart deployment/${{ env.DEPLOYMENT }} -n ${{ env.NAMESPACE }}
+
+      - name: Verify deployment health
+        run: |
+          kubectl rollout status deployment/${{ env.DEPLOYMENT }} -n ${{ env.NAMESPACE }} --timeout=240s

@@ -1,0 +1,30 @@
+{
+    "type": "array",
+    "items": {
+        "type": "object",
+        "properties": {
+            "tag": {
+                "type": "string"
+            },
+            "description": {
+                "type": "string"
+            },
+            "operation_type": {
+                "type": "string"
+            },
+            "narrative_id": {
+                "type": "string"
+            },
+            "instrument_id": {
+                "type": "string"
+            }
+        },
+        "required": [
+            "tag",
+            "description",
+            "operation_type",
+            "narrative_id",
+            "instrument_id"
+        ]
+    }
+}

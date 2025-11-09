@@ -1,0 +1,44 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smartdocs-vllm
+  namespace: smartdocs-agentic
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: smartdocs-vllm
+  template:
+    metadata:
+      labels:
+        app: smartdocs-vllm
+    spec:
+      nodeSelector:
+        agentpool: gpu
+      containers:
+        - name: vllm
+          image: acr.example.com/smartdocs/vllm:latest
+          ports:
+            - containerPort: 9000
+          resources:
+            limits:
+              nvidia.com/gpu: 1
+              cpu: 2
+              memory: 8Gi
+            requests:
+              nvidia.com/gpu: 1
+              cpu: 1
+              memory: 8Gi
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: smartdocs-vllm
+  namespace: smartdocs-agentic
+spec:
+  selector:
+    app: smartdocs-vllm
+  ports:
+    - port: 9000
+      targetPort: 9000
+  type: ClusterIP

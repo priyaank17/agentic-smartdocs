@@ -1,0 +1,119 @@
+standard_property_name,client_property_name,possible_table_name,parent_table_name,node_name,node_category,node_subpart_type,asset_class
+demister_pad,"DEMISTER PAD","MATERIALS,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+anti_vortex_baffles,"ANTI VORTEX BAFFLES","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+anti_vortex_baffles_for_liquid_outlet,"ANTI VORTEX BAFFLES FOR LIQUID OUTLET","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+anti_vortex_baffles_for_liquid_outlets,"ANTI VORTEX BAFFLES FOR LIQUID OUTLETS (3 NOS.)","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+baffle_plates,"BAFFLE PLATES","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+blade_count,"Blade Count","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+blade_width,"Blade Width","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+blades,"Blades","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+demister pad,"DEMISTER PAD","MATERIALS",,construction_accessories,primary_equipments,,drum
+gage_hatch,"GAGE HATCH","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+gaskets,"GASKETS","MATERIALS",,construction_accessories,primary_equipments,,drum
+guardrail,"GUARDRAIL","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+impeller,"Impeller","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+impeller_diameter,"Impeller Diameter","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+impeller_speed,"Impeller Speed","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+impeller_type,"Impeller Type","CONSTRUCTION","AGITATOR",construction_accessories,auxiliary_equipments,agitator,drum
+internal_steam_coil,"INTERNAL STEAM COIL (NOTE 2)","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+internal_weir,"INTERNAL WEIR","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+ladder,"LADDER","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+level_gage,"LEVEL GAGE","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+platform,"PLATFORM","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+slotted_t_distributor,"SLOTTED T - DISTRIBUTOR","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+spray_nozzle,"SPRAY NOZZLE","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+stairways,"STAIRWAYS","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+t_distributors,"T- DISTRIBUTORS,T - DISTRIBUTORS","ACCESORIES SUPPLIED BY SELLER,ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+t_sparger,"T-SPARGER (NOTE 1)","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+capacity,"Capacity","DESCRIPTION",,equipments,primary_equipments,,drum
+diameter,"Diameter,DIA,Dia,DIAMETER","DESCRIPTION,DEMISTER DATA",,equipments,primary_equipments,,drum
+flash_point,"FLASH Pt.","OPERATING DATA",,process_fluids,primary_equipments,,drum
+fluid,"Fluid,FLUID","OPERATING DATA,PROCESS FLUID,SHAFT SEALING FLUID PROPERTIES","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+fluid,"Fluid,FLUID","OPERATING DATA,PROCESS FLUID,SHAFT SEALING FLUID PROPERTIES",,process_fluids,primary_equipments,,drum
+fluid_hazardousness,"FLUID HAZARDOUSNESS","OPERATING DATA",,process_fluids,primary_equipments,,drum
+layer_1_thickness_bottom,"LAYER 1 THICKNESS (BOTTOM)","DEMISTER DATA",,equipments,primary_equipments,,drum
+layer_1_type_bottom,"LAYER 1 TYPE (BOTTOM)","DEMISTER DATA",,equipments,primary_equipments,,drum
+layer_2_thickness_top,"LAYER 2 THICKNESS (TOP)","DEMISTER DATA",,equipments,primary_equipments,,drum
+layer_2_type_top,"LAYER 2 TYPE (TOP)","DEMISTER DATA",,equipments,primary_equipments,,drum
+length,"Length","DESCRIPTION",,equipments,primary_equipments,,drum
+material_shaft_and_impeller,"Material: Shaft and Impeller","MATERIAL","AGITATOR",materials,auxiliary_equipments,agitator,drum
+mist_eliminator_top_to_vapor_outlet,"MIST ELIM. TOP TO VAPOR OUTLET","DEMISTER DATA",,equipments,primary_equipments,,drum
+pressure,"Pressure,PRESSURE","DESIGN_CONDITIONS,OPERATING DATA",,equipments,primary_equipments,,drum
+quantity,"Quantity","DESCRIPTION",,equipments,primary_equipments,,drum
+specific_heat,"Specific Heat,SPECIFIC HEAT","SHAFT SEALING FLUID PROPERTIES","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+support_ring_width,"SUPPORT RING WIDTH","DEMISTER DATA",,equipments,primary_equipments,,drum
+temperature,"TEMPERATURE,Temperature","DESIGN_CONDITIONS,OPERATING DATA,SHAFT SEALING FLUID PROPERTIES",,equipments,primary_equipments,,drum
+two_crinkled_wire_mesh_screens,"TWO CRINKLED WIRE MESH SCREENS","ACCESSORIES SUPPLIED BY SELLER",,construction_accessories,primary_equipments,,drum
+type,"Type","DESCRIPTION",,equipments,primary_equipments,,drum
+wind_pressure,"WIND PRESS.,Wind Press.","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+windpress,"WIND PRESS.","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+coil,"COIL","MATERIALS",,materials,primary_equipments,,drum
+corrosion_allowance_bottom,"CORR ALLOWANCE: BOTTOM","MATERIALS",,materials,primary_equipments,,drum
+corrosion_allowance_heads,"CORR ALLOWANCE: HEADS","MATERIALS",,materials,primary_equipments,,drum
+corrosion_allowance_shell,"CORR ALLOWANCE: SHELL","MATERIALS",,materials,primary_equipments,,drum
+corrosion_allowance_top,"CORR ALLOWANCE: TOP","MATERIALS",,materials,primary_equipments,,drum
+exclusions,"EXCLUSIONS","MATERIALS",,materials,primary_equipments,,drum
+heads,"HEADS","MATERIALS",,materials,primary_equipments,,drum
+height,"Height","DESCRIPTION",,equipments,primary_equipments,,drum
+internals,"INTERNALS","MATERIALS",,materials,primary_equipments,,drum
+jacket,"JACKET","MATERIALS",,materials,primary_equipments,,drum
+jacket_coil,"JACKET COIL","MATERIALS",,materials,primary_equipments,,drum
+minimum metal design temperature,"MINIMUM METAL DESIGN TEMPERATURE","MATERIALS",,materials,primary_equipments,,drum
+minimum_metal_design_temperature,"MINIMUM METAL DESIGN TEMPERATURE","MATERIALS",,materials,primary_equipments,,drum
+minimum_metal_design_temperature_drum,"MINIMUM METAL DESIGN TEMPERATURE DRUM","MATERIALS",,materials,primary_equipments,,drum
+minimum_metal_design_temperature_jacket,"MINIMUM METAL DESIGN TEMPERATURE JACKET","MATERIALS",,materials,primary_equipments,,drum
+shell,"SHELL","MATERIALS",,materials,primary_equipments,,drum
+applicable_to_as_built,"Applicable to: As Built,Applicable To: As Built","DESCRIPTION",,meta_data,primary_equipments,,drum
+applicable_to_inquiry,"Applicable To: Inquiry,Applicable to: Inquiry","DESCRIPTION",,meta_data,primary_equipments,,drum
+applicable_to_purchase,"Applicable to: Purchase,Applicable To: Purchase","DESCRIPTION",,meta_data,primary_equipments,,drum
+company,"Company","META DATA",,meta_data,primary_equipments,,drum
+company_identification_code,"Company Identification Code","META DATA",,meta_data,primary_equipments,,drum
+contractor,"Contractor","META DATA",,meta_data,primary_equipments,,drum
+contractor_identification_code,"Contractor Identification Code","META DATA",,meta_data,primary_equipments,,drum
+customer,"Customer","DESCRIPTION",,meta_data,primary_equipments,,drum
+document_title,"Document Title","META DATA",,meta_data,primary_equipments,,drum
+installation,"Installation","DESCRIPTION",,meta_data,primary_equipments,,drum
+item,"Item","DESCRIPTION",,meta_data,primary_equipments,,drum
+location,"Location","DESCRIPTION,META DATA",,meta_data,primary_equipments,,drum
+orientation,"Orientation","DESCRIPTION",,meta_data,primary_equipments,,drum
+p_and_id,"P&ID","DESCRIPTION",,meta_data,primary_equipments,,drum
+piping_and_instrumentation_diagram,"P&ID","DESCRIPTION",,meta_data,primary_equipments,,drum
+process_and_instrumentation_diagram,"P&ID","DESCRIPTION",,meta_data,primary_equipments,,drum
+process_data_sheet_title,"Process Data Sheet Title","META DATA",,meta_data,primary_equipments,,drum
+project,"Project","META DATA",,meta_data,primary_equipments,,drum
+project_name,"Project Name","META DATA",,meta_data,primary_equipments,,drum
+section,"Section","META DATA",,meta_data,primary_equipments,,drum
+service,"Service","DESCRIPTION",,meta_data,primary_equipments,,drum
+sheet_number,"Sheet Number","META DATA",,meta_data,primary_equipments,,drum
+density,"DENSITY,Density","OPERATING DATA,SHAFT SEALING FLUID PROPERTIES,PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+density,"DENSITY,Density","OPERATING DATA,SHAFT SEALING FLUID PROPERTIES,PROCESS FLUID",,process_fluids,primary_equipments,,drum
+density_bulk,"Density: Bulk,Density Bulk","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+density_range,"Density Range","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+density_true,"Density True,Density: True","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+max_liquid_level,"Max Liquid Level","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+min_liquid_level,"Min Liquid Level","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+powder_particles_size_average,"Powder Particles Size: Average,Powder Particles Size Average","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+powder_particles_size_max,"Powder Particles Size Max,Powder Particles Size: Max","PROCESS FLUID","AGITATOR",process_fluids,auxiliary_equipments,agitator,drum
+viscosity,"VISCOSITY,Viscosity","SHAFT SEALING FLUID PROPERTIES,PROCESS FLUID","AGITATOR","process_fluids",auxiliary_equipments,agitator,drum
+viscosity,"VISCOSITY,Viscosity","SHAFT SEALING FLUID PROPERTIES,PROCESS FLUID",,"equipments",primary_equipments,,drum
+temperature,"TEMPERATURE,Temperature","DESIGN_CONDITIONS,OPERATING DATA,SHAFT SEALING FLUID PROPERTIES","AGITATOR","testing_inspections",auxiliary_equipments,agitator,drum
+temperature,"TEMPERATURE,Temperature","DESIGN_CONDITIONS,OPERATING DATA,SHAFT SEALING FLUID PROPERTIES","AGITATOR","testing_inspections",auxiliary_equipments,agitator,drum
+revision_number,"Revision Number","META DATA",,revisions,primary_equipments,,drum
+code,"Code,CODE","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_pressure,"DESIGN PRESSURE","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_pressure_drum,"Design Pressure: Drum","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_pressure_jacket,"Design Pressure: Jacket","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_temperature,"DESIGN TEMPERATURE","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_temperature_drum,"Design Temperature: Drum","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+design_temperature_jacket,"Design Temperature: Jacket","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+earth_connection,"Earth Connection,EARTH CONNECTION","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+earthquake,"Earthquake,EARTHQUAKE","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+external_fire_condition,"External Fire Condition,EXTERNAL FIRE CONDITION","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+fire_proofing,"FIRE PROOFING,Fire Proofing","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+insulation,"Insulation,INSULATION","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+insulation_paint,"INSULATION PAINT","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+paint,"Paint,PAINT","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+pressure,"Pressure,PRESSURE","DESIGN_CONDITIONS,OPERATING DATA","AGITATOR",testing_inspections,auxiliary_equipments,agitator,drum
+radiograph,"Radiograph,RADIOGRAPH","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+stress_relief,"STRESS RELIEF,Stress Relief","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum
+surface_preparation,"SURF PREP,Surf Prep","DESIGN_CONDITIONS",,testing_inspections,primary_equipments,,drum

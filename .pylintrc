@@ -1,0 +1,22 @@
+[MASTER]
+# Specify a configuration file.
+rcfile=
+init-hook='import sys; sys.path.append(".")'
+
+[MESSAGES CONTROL]
+disable=logging-fstring-interpolation, logging-not-lazy, R0801
+
+[EXCEPTIONS]
+# Overgeneral exceptions that will be caught.
+overgeneral-exceptions=builtins.Exception
+
+
+[DESIGN]
+# Maximum number of parents for a class (see R0901).
+max-parents=7
+max-locals=25
+
+[BASIC]
+# Regular expression which should only match correct module names
+variable-naming-style=any
+module-naming-style=any

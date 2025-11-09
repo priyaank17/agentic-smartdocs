@@ -1,0 +1,25 @@
+# @format
+name: CD workflow
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  CI:
+    uses: ./.github/workflows/common.ci.yml
+    secrets:
+      TOKEN: ${{ secrets.TOKEN }}
+  CD:
+    needs: CI
+    uses: ./.github/workflows/common.cd.yml
+    secrets:
+      AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID_AQ }}
+      AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY_AQ }}
+      AWS_REGION: ${{ secrets.AWS_REGION }}
+      TOKEN: ${{ secrets.TOKEN }}
+    with:
+      ECR_REPOSITORY: artisan-narrative-asset-association-qa-ecr-iac
+      LAMBDA: artisan-narrative-asset-association-qa-iac
+

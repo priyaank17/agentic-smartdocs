@@ -1,0 +1,50 @@
+name: Common workflow
+on:
+  workflow_call:
+    secrets:
+      TOKEN:
+        description: 'Token for the CI workflow from CD'
+        required: true
+jobs:
+  CI:
+        name: "Global CI Workflow"
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v2
+
+            - name: Setup Python
+              uses: actions/setup-python@v1
+              with:
+                  python-version: 3.9
+
+            - name: Setup Node.js
+              uses: actions/setup-node@v4
+              with:
+                node-version: 20
+
+            - name: Install NodeJS dependencies with npm
+              run: |
+                npm install
+
+            - name: Checking for lint errors on JSON and JSON Schema files
+              run: |
+                npm run lint
+
+            - name: Checking for lint errors on Markdown files
+              run: |
+                npm run lint:markdown
+
+            - name: Install dependencies
+              env:
+                TOKEN: ${{secrets.TOKEN}}
+              run: |
+                python -m pip install --upgrade pip
+                python -m pip install pipenv
+                python -m pip install -r requirements.txt
+
+            - name: Checking for Linting Errors with flake8
+              run: python -m pipenv run flake8
+
+            - name: Checking for Linting Errors with pylint
+              run:  pipenv run pylint --rcfile=.pylintrc src/**/*.py

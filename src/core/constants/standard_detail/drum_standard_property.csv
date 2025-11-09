@@ -1,0 +1,15 @@
+possible_table_name,parent_table_name,node_name,node_category,node_subpart_type,asset_class
+ACCESSORIES SUPPLIED BY SELLER,, construction_accessories,primary_equipments,,drum
+SHAFT SEALING FLUID PROPERTIES,AGITATOR,construction_accessories,auxiliary_equipments,agitator,drum
+MATERIALS,,materials,primary_equipments,,drum
+META DATA,,meta_data,primary_equipments,,drum
+DESIGN_CONDITIONS,AGITATOR,testing_inspections,auxiliary_equipments,agitator,drum
+ACCESSORIES SUPPLIED BY SELLER,,construction_accessories,primary_equipments,,drum
+MATERIAL,AGITATOR,materials,auxiliary_equipments,agitator,drum
+OPERATING DATA,,process_fluids,primary_equipments,,drum
+CONSTRUCTION,AGITATOR,construction_accessories,auxiliary_equipments,agitator,drum
+ACCESORIES SUPPLIED BY SELLER,,construction_accessories,primary_equipments,,drum
+PROCESS FLUID,AGITATOR,process_fluids,auxiliary_equipments,agitator,drum
+DEMISTER DATA,,equipments,auxiliary_equipments,demister,drum
+DESIGN_CONDITIONS,,testing_inspections,primary_equipments,,drum
+DESCRIPTION,,meta_data,primary_equipments,,drum

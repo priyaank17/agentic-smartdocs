@@ -1,0 +1,221 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "$id": "https://example.com/schema.json",
+  "title": "Data Sheet Schema",
+  "description": "A schema for the provided JSON structure",
+  "type": "object",
+  "properties": {
+    "meta_data": {
+      "type": "object",
+      "title": "Meta Data",
+      "description": "Metadata related to the plant and project",
+      "additionalProperties": false,
+      "properties": {
+        "plant_name": {
+          "type": "string",
+          "title": "Plant Name",
+          "description": "Name of the plant"
+        },
+        "plant_number": {
+          "type": "string",
+          "title": "Plant Number",
+          "description": "Number of the plant"
+        },
+        "service_name": {
+          "type": "string",
+          "title": "Service Name",
+          "description": "Name of the service"
+        },
+        "manufacture": {
+          "type": "string",
+          "title": "Manufacture",
+          "description": "Manufacture details"
+        },
+        "document_number": {
+          "type": "string",
+          "title": "Document Number",
+          "description": "Document number"
+        },
+        "client_name": {
+          "type": "string",
+          "title": "Client Name",
+          "description": "Name of the client"
+        },
+        "equipment_name": {
+          "type": "string",
+          "title": "Equipment Name",
+          "description": "Name of the equipment"
+        },
+        "equipment_tag": {
+          "type": "string",
+          "title": "Equipment Tag",
+          "description": "Tag of the equipment"
+        },
+        "project_number": {
+          "type": "string",
+          "title": "Project Number",
+          "description": "Number of the project"
+        },
+        "site": {
+          "type": "string",
+          "title": "Site",
+          "description": "Site information"
+        },
+        "unit": {
+          "type": "string",
+          "title": "Unit",
+          "description": "Unit information"
+        },
+        "item_number": {
+          "type": "string",
+          "title": "Item Number",
+          "description": "Item number"
+        }
+      },
+      "required": [
+        "plant_name",
+        "plant_number",
+        "service_name",
+        "manufacture",
+        "document_number",
+        "client_name",
+        "equipment_name",
+        "equipment_tag",
+        "project_number",
+        "site",
+        "unit",
+        "item_number"
+      ]
+    },
+    "equipments": {
+      "type": "array",
+      "title": "Equipments",
+      "description": "List of equipments",
+      "items": {
+        "type": "object",
+        "title": "Equipment",
+        "additionalProperties": true
+      }
+    },
+    "nozzles": {
+      "type": "array",
+      "title": "Nozzles",
+      "description": "List of nozzles",
+      "items": {
+        "type": "object",
+        "title": "Nozzle",
+        "additionalProperties": true
+      }
+    },
+    "sub_parts": {
+      "type": "array",
+      "title": "Sub Parts",
+      "description": "List of sub parts",
+      "items": {
+        "type": "object",
+        "title": "Sub Part",
+        "additionalProperties": true
+      }
+    },
+    "properties": {
+      "type": "array",
+      "title": "Properties",
+      "description": "List of properties",
+      "items": {
+        "type": "object",
+        "title": "Property",
+        "additionalProperties": false,
+        "properties": {
+          "property_name": {
+            "type": "string",
+            "title": "Property Name",
+            "description": "Name of the property"
+          },
+          "standard_property_name": {
+            "type": "string",
+            "title": "Standard Property Name",
+            "description": "Standard property name assign for better understanding of the property"
+          },
+          "property_value": {
+            "type": ["string", "null"],
+            "title": "Property Value",
+            "description": "Value of the property"
+          },
+          "property_notes": {
+            "type": ["string", "null"],
+            "title": "Property Notes",
+            "description": "Notes related to the property"
+          },
+          "data_sheet_section": {
+            "type": "string",
+            "title": "Data Sheet Section",
+            "description": "Name of the section of the datasheet from where the table extracted"
+          },
+          "context": {
+            "type": "object",
+            "title": "Context",
+            "description": "Context of the property",
+            "additionalProperties": false,
+            "properties": {
+              "context_name": {
+                "type": "string",
+                "title": "Context Name",
+                "description": "Name of the context",
+                "anyOf": [
+                  {
+                    "const": "EQUIPMENT",
+                    "description": "Context is equipment"
+                  },
+                  {
+                    "const": "NOZZLE",
+                    "description": "Context is nozzle"
+                  },
+                  {
+                    "const": "SUB_PART",
+                    "description": "Context is sub part"
+                  }
+                ]
+              },
+              "equipment_name": {
+                "type": ["string", "null"],
+                "title": "Equipment Name",
+                "description": "Name of the equipment"
+              },
+              "connection_type": {
+                "type": ["string", "null"],
+                "title": "Connection Type",
+                "description": "Type of the connection"
+              },
+              "subpart_name": {
+                "type": ["string", "null"],
+                "title": "Sub Part Name",
+                "description": "Name of the sub part"
+              },
+              "nozzle_number": {
+                "type": ["string", "null"],
+                "title": "Nozzle Number",
+                "description": "Number of the nozzle"
+              }
+            },
+            "required": ["context_name", "equipment_name", "connection_type", "subpart_name"]
+          }
+        },
+        "required": [
+          "property_name",
+          "standard_property_name",
+          "property_value",
+          "property_notes",
+          "data_sheet_section",
+          "context"
+        ]
+      }
+    }
+  },
+  "required": [
+    "meta_data",
+    "equipments",
+    "nozzles",
+    "sub_parts",
+    "properties"
+  ]
+}

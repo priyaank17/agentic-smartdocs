@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: {{ include "smartdocs-agentic.fullname" . }}
+  labels:
+    {{- include "smartdocs-agentic.labels" . | nindent 4 }}
+spec:
+  replicas: {{ .Values.replicaCount | default 3 }}
+  selector:
+    matchLabels:
+      {{- include "smartdocs-agentic.selectorLabels" . | nindent 6 }}
+  template:
+    metadata:
+      labels:
+        {{- include "smartdocs-agentic.selectorLabels" . | nindent 8 }}
+    spec:
+      containers:
+        - name: api
+          image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+          ports:
+            - containerPort: 8080
+          resources:
+            {{- toYaml .Values.resources | nindent 12 }}

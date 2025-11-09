@@ -1,0 +1,270 @@
+possible_table_name,parent_table_name,node_name,node_category,node_subpart_type,asset_class
+PRESSURE-INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+SEAL FACES,seal materials,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE-INSTRUMENTS,,instrumentation,primary_equipments,,pump
+SEAL MATERIALS,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PUMP,,equipments,primary_equipments,,pump
+SEAL SPECIFICATIONS,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+MAGNETIC DRIVE PUMPS,,equipments,primary_equipments,,pump
+FLOW - INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+MATERIAL INSPECTION,NOTES,testing_inspections,primary_equipments,,pump
+PRESSURE DATA,Pump Performance Datasheet,performance,primary_equipments,,pump
+CONNECTION LINES,seal auxiliary system,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+LEVEL-INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+NOZZLE CONNECTIONS,CONSTRUCTION,nozzles,primary_equipments,,pump
+FLOW INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+LEVEL-INSTRUMENTS,,instrumentation,primary_equipments,,pump
+OTHER PURCHASED REQUIREMENTS,,others,primary_equipments,,pump
+SEAL FACES,SEAL MATERILAS,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+LIQUID,,process_fluids,primary_equipments,,pump
+SECONDARY SEALS,SEAL MATERILAS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+TYPE A,SEAL SPECIFICATION,materials,auxiliary_equipments,seal_auxiliary_system,pump
+SITE & UTILITIES,,others,primary_equipments,,pump
+BURRIER & BUFFER RESERVOIRS,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+LIQUID CHARACTERISTICS,,process_fluids,primary_equipments,,pump
+PUMPED STREAM,fluid data,process_fluids,primary_equipments,,pump
+SITE CONDITIONS,,others,primary_equipments,,pump
+GENERAL,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+OPERATING CONDITIONS,,operating_conditions,primary_equipments,,pump
+SPRINGS,SEAL MATERILAS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+FLOW INSTRUMENTS,instrumentation,instrumentation,primary_equipments,,pump
+GENERAL,,equipments,primary_equipments,,pump
+PUMP,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+DRIVER,SITE AND UTILITY DATA,driver_motor,primary_equipments,,pump
+AUX CASE CONNECTION,MECHANICAL DATA,mechanical_geometry,primary_equipments,,pump
+FLOW-INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+SECONDARY SEALS,,materials,auxiliary_equipments,seal_auxiliary_system,pump
+FLUID DATA,FLUID DATA,process_fluids,primary_equipments,,pump
+AT DESIGNATED TEMPERTURE,PUMPED FLUID,process_fluids,primary_equipments,,pump
+BASEPLATE,,construction_accessories,primary_equipments,,pump
+COOLER,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+TEST AT PUMP MANUFACTURER - SEAL SPECIFIC,INSPECTION & TESTING,testing_inspections,primary_equipments,,pump
+COOLER,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+ARRANGEMENT 3,SEAL SPECIFICATION,equipments,auxiliary_equipments,seal_specification,pump
+PUMP ORIENTATION,,equipments,primary_equipments,,pump
+INSTRUMENT AIR,SITE AND UTILITY DATA,instrumentation,primary_equipments,,pump
+MATERIALS,,materials,primary_equipments,,pump
+NOZZLE CONNECTIONS,mechanical data,nozzles,primary_equipments,,pump
+LEVEL INSTRUMENTS,instrumentation,instrumentation,primary_equipments,,pump
+PAINT AND SHIPMENT PREPARATION,,construction_accessories,primary_equipments,,pump
+CASING MOUNTING,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+BASEPLATE,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+DRIVERS,,driver_motor,primary_equipments,,pump
+EXTERNAL SEAL FLUSH SYSTEMS,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+LIQUID,PUMP PERFORMANCE DATASHEET,process_fluids,primary_equipments,,pump
+QUENCH DATA,fluid data,process_fluids,primary_equipments,,pump
+MATERIAL,PUMP PERFORMANCE DATASHEET,materials,primary_equipments,,pump
+PISTON ACCUMULATOR,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+SPRINGS,SEAL MATERIALS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE INSTRUMENTS,instrumentation,instrumentation,primary_equipments,,pump
+WELDING AND REPAIRS,,testing_inspections,primary_equipments,,pump
+SITE & UTILITY DATA,,others,primary_equipments,,pump
+Construction,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+SEAL SUPPORT SYSTEM MOUNTING,,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+SEAL CHAMBER DATA,SEAL MATERILAS,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+APPLICABLE SPECIFICATIONS,,equipments,primary_equipments,,pump
+GENERAL,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+INSPECTION & TESTING,inspection & testing,testing_inspections,primary_equipments,,pump
+METAL BELLOWS,SEAL MATERILAS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+INSTRUMENTATION,,instrumentation,primary_equipments,,pump
+CONNECTION LINES,SEAL AUXILIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+GENERAL,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+OPERATING_CONDITIONS,operating conditions,operating_conditions,primary_equipments,,pump
+GENERAL,SEAL AUXULIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PERFORMANCE,Pump Performance Datasheet,performance,primary_equipments,,pump
+PROJECT PHASE,,meta_data,primary_equipments,,pump
+SEAL SPECIFICATION,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+SPARE PARTS,SURFACE PREPARATION AND PAINT,equipments,primary_equipments,,pump
+PUMPED FLUID,,process_fluids,primary_equipments,,pump
+DRIVER & POWER DATA,Pump Performance Datasheet,driver_motor,primary_equipments,,pump
+SURFACE PREPARATION AND PAINT,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+LEVEL- INSTRUMENTS,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+COLLECT. RESERVOIR FOR LIQUID LEKAGE,SEAL AUXILIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+ACCESSORIES,,construction_accessories,primary_equipments,,pump
+CONSTRUCTION,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+MEASURED AT CAPACITY,PERFORMANCE,performance,primary_equipments,,pump
+QUENCH FLUID,FLUID DATA,process_fluids,primary_equipments,,pump
+FLOW-INSTRUMENTS,SEAL AUXILARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+BARRIER & BUFFER RESERVOIRS,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE CASING AUX. CONNECTIONS,,construction_accessories,primary_equipments,,pump
+FLOW- INSTRUMENTS,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+UNITS,SEAL AUXILIARY SYSTEM,materials,auxiliary_equipments,seal_auxiliary_system,pump
+TYPE B,SEAL SPECIFICATION,materials,auxiliary_equipments,seal_auxiliary_system,pump
+RIVER,,others,primary_equipments,,pump
+COOLER,,equipments,primary_equipments,,pump
+PRESSURE-INSTRUMENTS,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+SEAL CHAMBER DATA,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE DATA,PUMP PERFORMANCE DATASHEET,performance,primary_equipments,,pump
+ASME B73.1 CENRIFUGAL PUMP DATASHEET,,equipments,primary_equipments,,pump
+DRIVER & POWER DATA,,driver_motor,primary_equipments,,pump
+BARRIER/BUFFER GAS SUPPLY SYSTEM,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PRESSURE-INSTRUMENTS,SEAL AUXILARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+OPERATING_CONDITIONS,PUMP PERFORMANCE DATASHEET,operating_conditions,primary_equipments,,pump
+NOZZLE CONNECTIONS,,nozzles,primary_equipments,,pump
+AT DESIGNATED CAPACITY,PUMP ORIENTATION,equipments,primary_equipments,,pump
+SPARE ROTOR ASSEMBLY PACKAGED FOR,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+CYCLONE SEPARATOR,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+MATERIAL,Pump Performance Datasheet,materials,primary_equipments,,pump
+SPRINGS,seal materials,materials,auxiliary_equipments,seal_auxiliary_system,pump
+FLOW IN GPM,,performance,primary_equipments,,pump
+PROJECT PHASE,NOTES,notes,primary_equipments,,pump
+PUMPED FLUID,pumped fluid,process_fluids,primary_equipments,,pump
+SYSTEM DESIGN,OPERATING CONDITIONS,operating_conditions,primary_equipments,,pump
+ASME B73.1 CENTRIFUGAL PUMP DATASHEET,,equipments,primary_equipments,,pump
+COUPLING,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+MANUFACTURER DOCUMENTATION REQUIREMENTS,,meta_data,primary_equipments,,pump
+PIPING PLANS,,construction_accessories,primary_equipments,,pump
+DESCRIPTION,,meta_data,primary_equipments,,pump
+PUMP DATA,,equipments,primary_equipments,,pump
+MECHANICAL DATA,MECHANICAL DATA,mechanical_geometry,primary_equipments,,pump
+MOTOR_DRIVER,,driver_motor,primary_equipments,,pump
+SEAL SPECIFICATION,SEAL SPECIFICATION,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+CONTROLS,,instrumentation,primary_equipments,,pump
+BLADDER ACCUMULATOR,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+COUPLING,,construction_accessories,primary_equipments,,pump
+INSPECTION AND TESTING,,testing_inspections,primary_equipments,,pump
+OTHER PURCHASER REQUIRMENTS,,others,primary_equipments,,pump
+SEAL CHAMBER DATA,SEAL MATERIALS,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+DRIVER & POWER DATA,PUMP PERFORMANCE DATASHEET,driver_motor,primary_equipments,,pump
+LEVEL-INSTRUMENTS,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+MATERIAL INSPECTION,,testing_inspections,primary_equipments,,pump
+PISTON ACCUMULATOR,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+BARRIER/BUFFER GAS SUPPLY SYSTEM,SEAL AUXILARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+Bladder Accumulator,,equipments,primary_equipments,,pump
+SHIPMENT,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+BARRIER BUFFER GAS SUPPLY SYSTEM,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+NOTE,,notes,primary_equipments,,pump
+ROTATION,,construction_accessories,primary_equipments,,pump
+DRIVER,,driver_motor,primary_equipments,,pump
+SEAL AUXILIARY SYSTEM,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PUMP PERFORMANCE DATA SHEET,,performance,primary_equipments,,pump
+WELDED DESIGNS,INSPECTION & TESTING,testing_inspections,primary_equipments,,pump
+PISTON ACCUMULATOR,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+OPERATING_CONDITIONS,OPERATING CONDITIONS,operating_conditions,primary_equipments,,pump
+STEAM,SITE AND UTILITY DATA,process_fluids,primary_equipments,,pump
+CONNECTION LINES,,construction_accessories,primary_equipments,,pump
+CYCLONE SEPERATOR,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+METAL BELLOWS,seal materials,materials,auxiliary_equipments,seal_auxiliary_system,pump
+ROTATION,construction,construction_accessories,primary_equipments,,pump
+SECONDARY SEALS,seal materials,materials,auxiliary_equipments,seal_auxiliary_system,pump
+COOLING OR HEATING PIPING,,construction_accessories,primary_equipments,,pump
+ROTOR,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+TYPE C,SEAL SPECIFICATION,materials,auxiliary_equipments,seal_auxiliary_system,pump
+SITE DATA,SITE AND UTILITY DATA,others,primary_equipments,,pump
+MECHANICAL DATA,,mechanical_geometry,primary_equipments,,pump
+COOLING WATER,SITE AND UTILITY DATA,process_fluids,primary_equipments,,pump
+FLOW INSTRUMENTS,SEAL AUXILARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+MATERIAL,CONSTRUCTION,materials,primary_equipments,,pump
+ARRANGEMENT 1,SEAL SPECIFICATION,equipments,auxiliary_equipments,seal_specification,pump
+COOLER,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PUMPED STREAM,FLUID DATA,process_fluids,primary_equipments,,pump
+MATERIAL CERTIFICATION REQUIRED,INSPECTION AND TESTING,testing_inspections,primary_equipments,,pump
+COLLECT RESERVOIR FOR LIQUID LEAKAGE,SEAL AUXILIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+SEAL SPECEFICATION,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+MANFACTURER'S STANDARD,SURFACE PREPARATION AND PAINT,construction_accessories,primary_equipments,,pump
+SPARE PARTS,,equipments,primary_equipments,,pump
+PRESSURE CASING AUX CONNECTIONS,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+MECHANIC SEAL,,mechanical_geometry,primary_equipments,,pump
+PERFORMANCE,,performance,primary_equipments,,pump
+TEMPERATURE (7.4.2.3),INSTRUMENTATION,instrumentation,primary_equipments,,pump
+CASE PRESSURE RATING,PERFORMANCE,construction_accessories,primary_equipments,,pump
+PRESSURE - INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+BASEPLATE,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+API PUMP TYPE,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+INSTRUMENTATION,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+SHIPMENT,,others,primary_equipments,,pump
+COLLECT. RESERVOIR FOR LIQUID LEAKAGE,SEAL AUXILIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+LEVEL-INSTRUMENTS,SEAL AUXILARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+LOCATION,SITE & UTILITY DATA,meta_data,primary_equipments,,pump
+PIPING AND APPURTENANCES,,construction_accessories,primary_equipments,,pump
+PRESSURE DATA,,testing_inspections,primary_equipments,,pump
+SITE DATA,Site And Utility Data,others,primary_equipments,,pump
+COLLECT. RESERVOIR FOR LIQUID LEAKAGE,SEAL AUXILARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+BEARINGS AND LUBRICATION,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+SEAL FACES,SEAL MATERIALS,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+PUMP PERFORMANCE,,performance,primary_equipments,,pump
+INSTRUMENTATION,SEAL AUXILARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+OTHER PURCHASE REQUIREMENTS,,others,primary_equipments,,pump
+API PUMP TYPE,,construction_accessories,primary_equipments,,pump
+ROTATION,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+SECONDARY SEALS,SEAL MATERIALS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+SITE & UTILITES,,others,primary_equipments,,pump
+TEST,,testing_inspections,primary_equipments,,pump
+COUPLING BETWEEN OUMP AND RIVER,,construction_accessories,primary_equipments,,pump
+FLUSH FLUID,FLUID DATA,process_fluids,primary_equipments,,pump
+QA INSPECTION AND TEST,,testing_inspections,primary_equipments,,pump
+BASEPALTE,,construction_accessories,primary_equipments,,pump
+EXTERNAL SEAL FLUSH SYSTEMS,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+OPERATING_CONDITIONS,,operating_conditions,primary_equipments,,pump
+BLADDER ACCUMULATOR,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+CONNECTION LINES,SEAL AUXULIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+COOLER,SEAL AUXULIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+WELDINGS AND REPAIRS,,testing_inspections,primary_equipments,,pump
+METAL PARTS,SEAL MATERILAS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+INSPECTION & TESTING,,testing_inspections,primary_equipments,,pump
+TEMPERATURE,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+FLUID DATA,,process_fluids,primary_equipments,,pump
+BARRIER & BUFFER RESERVOIRS,seal auxiliary system,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+CONSTRUCTION,,construction_accessories,primary_equipments,,pump
+LIQUID,Pump Performance Datasheet,process_fluids,primary_equipments,,pump
+OPERATING_CONDITIONS,Pump Performance Datasheet,operating_conditions,primary_equipments,,pump
+BLADDER ACCUMULATOR,,equipments,primary_equipments,,pump
+PIPING PLANS,SEAL SPECIFICATION,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+LEVEL INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+LIQUID CHARACTERESTICS,,process_fluids,primary_equipments,,pump
+PRESSURE CASING AUX.CONNECTIONS,,construction_accessories,primary_equipments,,pump
+PERFORMANCE,SITE AND UTILITY DATA,performance,primary_equipments,,pump
+PRESSURE CASING AUX. CONNECTIONS,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+PREPARATION FOR SHIPMENT,,construction_accessories,primary_equipments,,pump
+SURFACE PREPARATION AND PAINT,,construction_accessories,primary_equipments,,pump
+SEAL CODE,SEAL SPECIFICATION,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+META DATA,,meta_data,primary_equipments,,pump
+OTHER PURCHASER REQUIREMENTS,,others,primary_equipments,,pump
+SEAL PERFORMANCE DATA,,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+SITE DATA,SITE & UTILITY DATA,others,primary_equipments,,pump
+METAL PARTS,SEAL MATERIALS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+TEMPERATURE,,design_conditions,primary_equipments,,pump
+WEIGHTS,,others,primary_equipments,,pump
+LEVEL - INSTRUMENTS,INSTRUMENTATION,instrumentation,primary_equipments,,pump
+PERFORMANCE,PUMP PERFORMANCE DATASHEET,performance,primary_equipments,,pump
+ARRANGEMENT 2,SEAL SPECIFICATION,equipments,auxiliary_equipments,seal_specification,pump
+PIPING & APPURTENANCES,,construction_accessories,primary_equipments,,pump
+COUPLING BETWEEN PUMP AND DRIVER,,construction_accessories,primary_equipments,,pump
+BUFFER & BARRIER FLUID,fluid data,process_fluids,primary_equipments,,pump
+QUENCH FLUID,fluid data,process_fluids,primary_equipments,,pump
+FLUSH FLUID,fluid data,process_fluids,primary_equipments,,pump
+PRESSURE CASING AUX.CONNECTIONS,CONSTRUCTION,construction_accessories,primary_equipments,,pump
+LIQUID,PUMPED FLUID,process_fluids,primary_equipments,,pump
+COLLECT.RESERVOIR FOR LIQUID LEAKAGE,SEAL AUXILIARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+LUBRICATION FLUID,,process_fluids,primary_equipments,,pump
+COLLECT. RESERVOIR FOR LIQUID LEAKAGE,,construction_accessories,primary_equipments,,pump
+MECHANICAL SEAL,,subparts,primary_equipments,,pump
+SERVICE,,others,primary_equipments,,pump
+ROTOR,construction,construction_accessories,primary_equipments,,pump
+ROTOR,,construction_accessories,primary_equipments,,pump
+BLADDER ACCUMULATOR,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+NOZZLE CONNECTIONS,MECHANICAL DATA,nozzles,primary_equipments,,pump
+PROJECT PHASE,DESCRIPTION,meta_data,primary_equipments,,pump
+BARRIER & BUFFER RESERVOIRS,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+BEARINGS AND LUBRICATION,,construction_accessories,primary_equipments,,pump
+MATERIAL,,materials,primary_equipments,,pump
+SITE AND UTILITY DATA,SITE AND UTILITY DATA,others,primary_equipments,,pump
+AUX CASE CONNECTIONS,MECHANICAL DATA,mechanical_geometry,primary_equipments,,pump
+SEAL CHAMBER DATA,seal materials,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+SITE AND UTILITY DATA,,others,primary_equipments,,pump
+HYDROTEST OH PUMP AS ASSEMBLY,CONSTRUCTION,testing_inspections,primary_equipments,,pump
+CONNECTION LINES,SEAL AUXILARY SYSTEM,construction_accessories,auxiliary_equipments,seal_auxiliary_system,pump
+ELECTRICITY,SITE AND UTILITY DATA,instrumentation,primary_equipments,,pump
+PISTON ACCUMULATOR,,equipments,primary_equipments,,pump
+INSTRUMENTATION,instrumentation,instrumentation,primary_equipments,,pump
+METAL BELLOWS,SEAL MATERIALS,materials,auxiliary_equipments,seal_auxiliary_system,pump
+METAL PARTS,seal materials,materials,auxiliary_equipments,seal_auxiliary_system,pump
+SUNDYNE PUMP-PREDICTED PERFORMANCE DATA,,performance,primary_equipments,,pump
+HEATING AND COOLING,,design_conditions,primary_equipments,,pump
+EXTERNAL SEAL FLUSH SYSTEMS,SEAL AUXILIARY SYSTEM,equipments,auxiliary_equipments,seal_auxiliary_system,pump
+BUFFER & BARRIER FLUID,FLUID DATA,process_fluids,primary_equipments,,pump
+FLOW-INSTRUMENTS,SEAL AUXILIARY SYSTEM,instrumentation,auxiliary_equipments,seal_auxiliary_system,pump
+PUMP PERFORMANCE DATASHEET,,performance,primary_equipments,,pump
+FLOW-INSTRUMENTS,,instrumentation,primary_equipments,,pump
+PRESSURE VESSEL DESIGN CODE REFERENCES,,design_conditions,primary_equipments,,pump
