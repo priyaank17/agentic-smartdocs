@@ -1,4 +1,4 @@
-"""."""
+"""Config file."""
 import os
 import pathlib
 import json
